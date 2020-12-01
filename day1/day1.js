@@ -3,6 +3,7 @@ const fs = require('fs');
 let input = fs.readFileSync("./input.txt", 'utf-8').split("\n").map(e => parseInt(e));
 function part1(){
     let elems = {}
+    //O(n)
     for(let e of input){
         elems[e] = true;
     
@@ -13,6 +14,7 @@ function part1(){
 
 function part2(){
     let twoSums = {};
+    //O(n^2)
     for(let a of input){
         for(let b of input){
             twoSums[a+b] = [a, b];
