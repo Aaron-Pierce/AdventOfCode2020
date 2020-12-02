@@ -7,15 +7,16 @@ function part1() {
     //O(m*n)
     for (let inputLine of input) {
         let line = inputLine.split(": ");
-        let characters = new Array(26).fill(0);
-
+        let occurances = 0;
+        let mustContain = line[0].charAt(line[0].length - 1);
         for (let character of line[1]) {
-            characters[character.charCodeAt(0) - 97]++;
+            occurances += character == mustContain;
         }
-        let mustContain = line[0].charCodeAt(line[0].length - 1);
+        
         let bound = line[0].split("-");
-        valid += parseInt(bound[0]) <= characters[mustContain - 97] && characters[mustContain - 97] <= parseInt(bound[1]);
+        valid += parseInt(bound[0]) <= occurances && occurances <= parseInt(bound[1]);
     }
+    console.log(valid)
 }
 
 function part2(){
@@ -34,5 +35,5 @@ function part2(){
     }
     console.log(valid)
 }
-
+part1();
 part2();
