@@ -14,7 +14,7 @@ function part1() {
         }
         
         let bound = line[0].split("-");
-        valid += parseInt(bound[0]) <= occurances && occurances <= parseInt(bound[1]);
+        valid += parseInt(bound[0]) <= occurances && occurances <= parseIntW(bound[1]);
     }
     console.log(valid)
 }
