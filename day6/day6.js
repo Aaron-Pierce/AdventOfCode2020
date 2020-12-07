@@ -34,8 +34,6 @@ function part2(){
                 }
             }
         }
-        console.log(charMap)
-        
         for(let char in charMap){
             if(charMap[char] == people.length) sum++;
         }
