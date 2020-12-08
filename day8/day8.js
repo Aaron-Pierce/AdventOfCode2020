@@ -83,7 +83,7 @@ function computeDelta(keyValuePair) {
 //and assign every element that can immediately terminate the sequence to have
 //a score of Infinity, then set every node's score equal to the score of the node it points to
 //so any node with score Infinity is in a terminating sequence.
-//So we that flipping a jmp or nop if that would put us onto
+//So flipping a jmp or nop if that would put us onto
 //an Infinity track will always give a solution.
 function part2BetterSolution() {
     let scores = new Array(input.length);
