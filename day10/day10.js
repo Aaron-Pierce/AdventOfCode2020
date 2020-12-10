@@ -38,6 +38,8 @@ function part2(){
         for(let j = 1; j <= 3; j++){
             if(inputCopy[i + j] - adapterValue <= 3 ){
                 addToMap(choiceMap, adapterValue, inputCopy[i + j]);
+            }else{
+                break;
             }
         }
     }
