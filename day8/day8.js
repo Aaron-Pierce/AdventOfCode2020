@@ -88,7 +88,7 @@ function computeDelta(keyValuePair) {
 function part2BetterSolution() {
     let scores = new Array(input.length);
 
-    //helper method, read the block of comments below first.
+    //helper method, read the comments for the for loop after this first.
     function scoreNode(index, visited) {
         //if we've already scored the node, just return the score
         if(scores[index] !== undefined) return scores[index];
