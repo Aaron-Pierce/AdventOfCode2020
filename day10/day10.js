@@ -16,11 +16,6 @@ function part1(){
 
 part1();
 
-function factorial(n){
-    if(n === 0) return 1;
-    return n * factorial(n-1);
-}
-
 function addToMap(map, key, value){
     if(map[key]) map[key].push(value);
     else map[key] = [value];
