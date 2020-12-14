@@ -1,6 +1,4 @@
-const { pseudoRandomBytes } = require('crypto');
 const fs = require('fs');
-const { compileFunction } = require('vm');
 let input = fs.readFileSync("./input.txt", 'utf-8').split("\n");
 
 function getAdjacentIndexes(x, y, matrix){
