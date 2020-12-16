@@ -1,5 +1,4 @@
 const fs = require('fs');
-const { moveMessagePortToContext } = require('worker_threads');
 let input = fs.readFileSync("./input.txt", 'utf-8').split("\n");
 
 function reverseString(str){
